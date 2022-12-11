@@ -33,15 +33,6 @@ func main() {
 		for i, _ := range ms {
 			playRound(i, ms, round)
 		}
-		if round == 19 {
-			fmt.Printf("%v", ms[0])
-		}
-		if round == 0 || round == 19 || round == 999 || round == 1999 || round == 2999 || round == 3999 || round == 4999 || round == 5999 || round == 6999 || round == 7999 || round == 8999 || round == 9999 {
-			fmt.Printf("\nRound %v: ", round+1)
-			for _, m := range ms {
-				fmt.Printf("%v ", m.inspected)
-			}
-		}
 	}
 
 	fmt.Printf("\nSolution 2: %v", productOfTopTwoInspects(ms))
